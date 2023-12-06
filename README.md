@@ -85,7 +85,7 @@ Berikut merupakan config selengkapnya dari setiap node :
 
 - LakeKoridor
 
-![s1](img/lakekoridor.png)
+![s1](img/lake.png)
 
 - Aura
 
