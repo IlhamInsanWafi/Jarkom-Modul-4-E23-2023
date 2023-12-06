@@ -446,7 +446,7 @@ iface eth1 inet static
 address 10.48.36.1
 netmask 255.255.255.248
 ```
--Schwer Mountains (57 host)
+- Schwer Mountains (57 host)
 ```
 auto eth0
 iface eth0 inet static
