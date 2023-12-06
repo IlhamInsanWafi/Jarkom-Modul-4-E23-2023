@@ -239,7 +239,8 @@ Untuk melihat CONFIG SELENGKAPNYA sebagai berikut :
 
 
 
-## CIDR
+### CIDR
+
 # Topologi GNS
 ![gns](img/gns.jpg)
 
