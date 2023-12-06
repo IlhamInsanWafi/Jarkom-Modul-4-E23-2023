@@ -311,6 +311,7 @@ auto eth3
 iface eth3 inet static
 	address 10.48.192.9
 	netmask 255.255.255.252
+```
 
 - Denken
 ```
@@ -334,6 +335,7 @@ iface eth0 inet static
 	gateway 10.48.64.1
 ```
 - WilleRegion (63 host)
+  
 ```
 auto eth0
 iface eth0 inet static
