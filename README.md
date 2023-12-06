@@ -240,6 +240,8 @@ Untuk melihat CONFIG SELENGKAPNYA sebagai berikut :
 
 
 ## CIDR
+# Topologi GNS
+![gns](img/gns.jpg)
 
 Prefix IP
 
