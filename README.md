@@ -238,10 +238,9 @@ Untuk melihat CONFIG SELENGKAPNYA sebagai berikut :
 ![s1](img/hasil.png)
 
 
-
-### CIDR
-
-# Topologi GNS
+---
+### CIDR (GNS)
+---
 ![gns](img/gns.jpg)
 
 Prefix IP
