@@ -284,3 +284,433 @@ Prefix IP
 ![subB](img/subG.jpg)
 
 ![gabB](img/gabG.jpg) 
+
+### Pembagian IP-CIDR
+![IPCIDR](img/IPCIDR.jpg)
+
+
+
+### Konfigurasi
+Berikut adalah konfigurasi jaringan tiap node pada topologi.
+- Aura
+```
+auto eth0
+iface eth0 inet dhcp
+
+auto eth1
+iface eth1 inet static
+	address 10.48.65.1
+	netmask 255.255.255.252
+
+auto eth2
+iface eth2 inet static
+	address 10.48.66.34
+	netmask 255.255.255.252
+
+auto eth3
+iface eth3 inet static
+	address 10.48.192.9
+	netmask 255.255.255.252
+
+- Denken
+```
+auto eth0
+iface eth0 inet static
+	address 10.48.65.2
+	netmask 255.255.255.252
+
+auto eth1
+iface eth1 inet static
+	address 10.48.64.1
+	netmask 255.255.255.0
+```
+
+- RoyalCapital (63 host)
+```
+auto eth0
+iface eth0 inet static
+	address 10.48.64.64
+	netmask 255.255.255.0
+	gateway 10.48.64.1
+```
+- WilleRegion (63 host)
+```
+auto eth0
+iface eth0 inet static
+	address 10.48.64.65
+	netmask 255.255.255.0
+	gateway 10.48.64.1
+```
+
+- Frieren
+```
+auto eth0
+iface eth0 inet static
+	address 10.48.66.33
+	netmask 255.255.255.252
+
+auto eth1
+iface eth1 inet static
+	address 10.48.16.2
+	netmask 255.255.255.252
+
+auto eth2
+iface eth2 inet static
+	address 10.48.66.1
+	netmask 255.255.255.224
+```
+
+- LakeKorridor (24 host)
+```
+auto eth0
+iface eth0 inet static
+	address 10.48.66.3
+	netmask 255.255.255.224
+	gateway 10.48.66.1
+```
+
+- Flamme
+```
+auto eth0
+iface eth0 inet static
+	address 10.48.16.1
+	netmask 255.255.255.252
+
+auto eth1
+iface eth1 inet static
+	address 10.48.8.2
+	netmask 255.255.255.252
+
+auto eth2
+iface eth2 inet static
+	address 10.48.36.9
+	netmask 255.255.255.252
+
+auto eth3
+iface eth3 inet static
+	address 10.48.32.1
+	netmask 255.255.252.0
+```
+- Fern
+```
+auto eth0
+iface eth0 inet static
+	address 10.48.8.1
+	netmask 255.255.255.252
+
+auto eth1
+iface eth1 inet static
+	address 10.48.0.1
+	netmask 255.255.248.0
+```
+
+- LaubHills (397 host)
+```
+auto eth0
+iface eth0 inet static
+	address 10.48.0.2
+	netmask 255.255.248.0
+	gateway 10.48.0.1
+```
+
+- AppetitRegion (625 host)
+```
+auto eth0
+iface eth0 inet static
+	address 10.48.3.0
+	netmask 255.255.248.0
+	gateway 10.48.0.1
+```
+
+- RohrRoad (1000 host)
+```
+auto eth0
+iface eth0 inet static
+	address 10.48.32.2
+	netmask 255.255.252.0
+	gateway 10.48.32.1
+```
+
+- Himmel
+```
+auto eth0
+iface eth0 inet static
+	address 10.48.36.10
+	netmask 255.255.255.252
+
+auto eth1
+iface eth1 inet static
+	address 10.48.36.1
+	netmask 255.255.255.248
+```
+- Eisen
+```
+auto eth0
+iface eth0 inet static
+	address 10.48.192.10
+	netmask 255.255.255.252
+
+auto eth1
+iface eth1 inet static
+	address 10.48.146.1
+	netmask 255.255.255.252
+
+auto eth2
+iface eth2 inet static
+	address 10.48.168.1
+	netmask 255.255.255.252
+
+auto eth3
+iface eth3 inet static
+	address 10.48.176.1
+	netmask 255.255.255.252
+
+auto eth4
+iface eth4 inet static
+	address 10.48.192.1
+	netmask 255.255.255.248
+```
+- Stark
+```
+auto eth0
+iface eth0 inet static
+	address 10.48.176.2
+	netmask 255.255.255.252
+	gateway 10.48.176.1
+```
+- Lugner
+```
+auto eth0
+iface eth0 inet static
+	address 10.48.168.2
+	netmask 255.255.255.252
+
+auto eth1
+iface eth1 inet static
+	address 10.48.160.1
+	netmask 255.255.252.0
+
+auto eth2
+iface eth2 inet static
+	address 10.48.164.1
+	netmask 255.255.255.0
+```
+- TurkRegion (1000 host)
+```
+auto eth0
+iface eth0 inet static
+	address 10.48.160.2
+	netmask 255.255.252.0
+	gateway 10.48.160.1
+```
+- GrobeForest (250 host)
+```
+auto eth0
+iface eth0 inet static
+	address 10.48.164.2
+	netmask 255.255.252.0
+	gateway 10.48.164.1
+```
+
+- Richter
+```
+auto eth0
+iface eth0 inet static
+	address 10.48.192.2
+	netmask 255.255.255.248
+	gateway 10.48.192.1
+```
+- Revolte
+```
+auto eth0
+iface eth0 inet static
+	address 10.48.192.3
+	netmask 255.255.255.248
+	gateway 10.48.192.1
+```
+
+- Linie
+```
+auto eth0
+iface eth0 inet static
+	address 10.48.146.2
+	netmask 255.255.255.252
+
+auto eth1
+iface eth1 inet static
+	address 10.48.136.1
+	netmask 255.255.252.0
+
+auto eth2
+iface eth2 inet static
+	address 10.48.144.1
+	netmask 255.255.254.0
+```
+- Lawine
+```
+auto eth0
+iface eth0 inet static
+	address 10.48.136.2
+	netmask 255.255.255.252
+
+auto eth1
+iface eth1 inet static
+	address 10.48.132.1
+	netmask 255.255.255.192
+```
+- BredtRegion (29 host)
+```
+auto eth0
+iface eth0 inet static
+	address 10.48.132.3
+	netmask 255.255.255.192
+	gateway 10.48.132.1
+```
+- Heiter
+```
+auto eth0
+iface eth0 inet static
+	address 10.48.132.2
+	netmask 255.255.255.192
+
+auto eth1
+iface eth1 inet static
+	address 10.48.128.1
+	netmask 255.255.252.0
+```
+- RiegelCanyon (510 host)
+```
+auto eth0
+iface eth0 inet static
+	address 10.48.128.3
+	netmask 255.255.252.0
+	gateway 10.48.128.1
+```
+
+- Sein
+```
+auto eth0
+iface eth0 inet static
+	address 10.48.128.2
+	netmask 255.255.252.0
+	gateway 10.48.128.1
+```
+- GranzChannel (254 host)
+```
+auto eth0
+iface eth0 inet static
+	address 10.48.144.2
+	netmask 255.255.254.0
+	gateway 10.48.144.1
+```
+
+
+### Routing tiap node;
+- Aura
+```
+# kiri 
+route add -net 10.48.0.0 netmask 255.255.248.0 gw 10.48.66.33 
+route add -net 10.48.8.0 netmask 255.255.255.252 gw 10.48.66.33 
+route add -net 10.48.32.0 netmask 255.255.252.0 gw 10.48.66.33 
+route add -net 10.48.36.8 netmask 255.255.255.252 gw 10.48.66.33 
+route add -net 10.48.36.0 netmask 255.255.255.248 gw 10.48.66.33 
+route add -net 10.48.16.0 netmask 255.255.255.252 gw 10.48.66.33 
+route add -net 10.48.66.0 netmask 255.255.255.224 gw 10.48.66.33 
+
+# kanan 
+route add -net 10.48.64.0 netmask 255.255.255.0 gw 10.48.65.2 
+
+# bawah
+route add -net 10.48.176.0 netmask 255.255.255.252 gw 10.48.192.10 
+route add -net 10.48.192.0 netmask 255.255.255.248 gw 10.48.192.10
+route add -net 10.48.168.0 netmask 255.255.255.252 gw 10.48.192.10 
+route add -net 10.48.160.0 netmask 255.255.252.0 gw 10.48.192.10 
+route add -net 10.48.164.0 netmask 255.255.255.0 gw 10.48.192.10 
+route add -net 10.48.146.0 netmask 255.255.255.252 gw 10.48.192.10
+route add -net 10.48.136.0 netmask 255.255.255.252 gw 10.48.192.10 
+route add -net 10.48.132.0 netmask 255.255.255.192 gw 10.48.192.10 
+route add -net 10.48.128.0 netmask 255.255.252.0 gw 10.48.192.10 
+route add -net 10.48.144.0 netmask 255.255.254.0 gw 10.48.192.10
+```
+- Frieren
+```
+# semua
+route add -net 0.0.0.0 netmask 0.0.0.0 gw 10.48.66.34
+
+route add -net 10.48.0.0 netmask 255.255.248.0 gw 10.48.16.1 
+route add -net 10.48.8.0 netmask 255.255.255.252 gw 10.48.16.1
+route add -net 10.48.32.0 netmask 255.255.252.0 gw 10.48.16.1 
+route add -net 10.48.36.8 netmask 255.255.255.252 gw 10.48.16.1 
+route add -net 10.48.36.0 netmask 255.255.255.248 gw 10.48.16.1 
+```
+- Flamme
+```
+# semua
+route add -net 0.0.0.0 netmask 0.0.0.0 gw 10.48.16.2
+
+route add -net 10.48.0.0  netmask 255.255.248.0 gw 10.48.8.1
+route add -net 10.48.36.0 netmask 255.255.255.248 gw 10.48.36.10 
+```
+- Fern
+```
+# semua
+route add -net 0.0.0.0 netmask 0.0.0.0 gw 10.48.8.2
+```
+- Himmel
+```
+# semua
+route add -net 0.0.0.0 netmask 0.0.0.0 gw 10.48.36.9
+```
+- Denken
+```
+# semua
+route add -net 0.0.0.0 netmask 0.0.0.0 gw 10.48.65.1
+```
+- Eisen
+```
+# semua
+route add -net 0.0.0.0 netmask 0.0.0.0 gw 10.48.192.9
+
+route add -net 10.48.160.0 netmask 255.255.252.0 gw 10.48.168.2 
+route add -net 10.48.164.0 netmask 255.255.255.0 gw 10.48.168.2 
+route add -net 10.48.136.0 netmask 255.255.255.252 gw 10.48.146.2 
+route add -net 10.48.132.0 netmask 255.255.255.192 gw 10.48.146.2 
+route add -net 10.48.128.0 netmask 255.255.252.0 gw 10.48.146.2 
+route add -net 10.48.144.0 netmask 255.255.254.0 gw 10.48.146.2 
+```
+- Lugner
+```
+# semua
+route add -net 0.0.0.0 netmask 0.0.0.0 gw 10.48.168.1
+```
+- Linie
+```
+# semua
+route add -net 0.0.0.0 netmask 0.0.0.0 gw 10.48.146.1
+
+route add -net 10.48.132.0 netmask 255.255.255.192 gw 10.48.136.2
+route add -net 10.48.128.0 netmask 255.255.252.0 gw 10.48.136.2 
+```
+- Lawine
+```
+# semua
+route add -net 0.0.0.0 netmask 0.0.0.0 gw 10.48.136.1
+
+route add -net 10.48.128.0 netmask 255.255.252.0 gw 10.48.132.2 
+```
+- Heiter
+```
+# semua
+route add -net 0.0.0.0 netmask 0.0.0.0 gw 10.48.132.1
+```
+
+### Testing
+Command
+```
+route -n
+```
+
+```
+ping 10.48.132.2
+```
+
